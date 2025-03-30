@@ -1,0 +1,4 @@
+{"level":"\u001b[31merror\u001b[39m","message":"","service":"crm-auth-be","timestamp":"2025-03-30 20:22:35"}
+{"level":"\u001b[31merror\u001b[39m","message":"","service":"crm-auth-be","timestamp":"2025-03-30 20:22:36"}
+{"level":"\u001b[31merror\u001b[39m","message":"something","service":"crm-auth-be","timestamp":"2025-03-30 20:22:39"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-03-30 20:24:30"}

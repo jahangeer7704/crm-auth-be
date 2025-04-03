@@ -1,4 +1,28 @@
-{"level":"\u001b[31merror\u001b[39m","message":"","service":"crm-auth-be","timestamp":"2025-03-30 20:22:35"}
-{"level":"\u001b[31merror\u001b[39m","message":"","service":"crm-auth-be","timestamp":"2025-03-30 20:22:36"}
-{"level":"\u001b[31merror\u001b[39m","message":"something","service":"crm-auth-be","timestamp":"2025-03-30 20:22:39"}
-{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-03-30 20:24:30"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: crm-auth-be-user validation failed: password: Path `password` (`jaha`) is shorter than the minimum allowed length (8).","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[31merror\u001b[39m","message":"ApiError: 400 - crm-auth-be-user validation failed: password: Path `password` (`jaha`) is shorter than the minimum allowed length (8).","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:37:02"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:47:32"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: Operation `crm-auth-be-users.insertOne()` buffering timed out after 10000ms","service":"crm-auth-be","timestamp":"2025-04-01 14:48:29"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 14:48:29"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:48:44"}
+{"level":"\u001b[31merror\u001b[39m","message":"next is not defined","service":"crm-auth-be","timestamp":"2025-04-01 14:53:00"}
+{"level":"\u001b[31merror\u001b[39m","message":"next is not defined","service":"crm-auth-be","timestamp":"2025-04-01 14:53:09"}
+{"level":"\u001b[31merror\u001b[39m","message":"next is not defined","service":"crm-auth-be","timestamp":"2025-04-01 14:53:24"}
+{"level":"\u001b[31merror\u001b[39m","message":"next is not defined","service":"crm-auth-be","timestamp":"2025-04-01 14:55:47"}
+{"level":"\u001b[31merror\u001b[39m","message":"next is not defined","service":"crm-auth-be","timestamp":"2025-04-01 14:55:51"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:10"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:17"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:21"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:23"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:30"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: listen EADDRINUSE: address already in use :::3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:50"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 15:24:16"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: MongoServerError E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user:  E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: MongoServerError E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[31merror\u001b[39m","message":"ApiError: 400 - E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[31merror\u001b[39m","message":"Uncaught Exception: EIO: i/o error, write","service":"crm-auth-be","timestamp":"2025-04-01 15:48:18"}

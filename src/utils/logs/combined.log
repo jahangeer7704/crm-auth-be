@@ -1,285 +1,170 @@
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 20:25:24"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 20:25:24"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 20:25:24"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:28:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:28:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:28:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:28:36"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:28:36"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:28:36"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:28:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:28:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:28:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:28:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:28:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:28:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:14"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:14"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:14"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:16"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:16"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:16"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:29:37"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:29:37"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:29:37"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:49"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:49"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:50"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:30:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:30:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:30:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:00"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:00"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:00"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:02"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:06"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:06"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:06"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:12"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:12"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:12"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:32"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:32"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:32"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:31:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:31:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:31:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:01"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:01"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:01"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:11"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:25"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:25"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:25"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:32:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:32:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:32:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:03"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:07"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:19"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:33:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:33:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:33:22"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:37:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:37:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:37:28"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:40:52"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:40:52"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:40:52"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:40:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:40:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:40:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:42:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:42:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:42:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:42:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:42:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:42:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:43:47"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:43:47"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:43:47"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:43:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:43:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:43:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:46:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:46:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:46:18"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:46:21"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:46:21"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:46:21"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:47:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:47:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:47:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:56:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:56:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:56:31"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:56:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:56:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:56:34"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:58:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:58:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:58:53"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:59:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:59:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:59:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:59:29"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:59:29"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:59:29"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:59:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:59:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:59:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:59:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:59:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:59:41"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 22:59:46"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 22:59:46"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 22:59:46"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:00:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:00:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:00:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:00:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:00:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:00:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:01:09"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:01:09"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:01:09"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:01:17"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:01:17"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:01:17"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:27"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:35"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:50"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:50"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:50"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:57"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:02:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:02:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:02:59"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:04"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:05"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:13"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:15"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:20"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:23"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:26"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:30"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:38"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:39"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:42"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-03-30 23:03:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-03-30 23:03:44"}
-{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-03-30 23:03:44"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: crm-auth-be-user validation failed: password: Path `password` (`jaha`) is shorter than the minimum allowed length (8).","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[31merror\u001b[39m","message":"ApiError: 400 - crm-auth-be-user validation failed: password: Path `password` (`jaha`) is shorter than the minimum allowed length (8).","service":"crm-auth-be","timestamp":"2025-03-31 22:25:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-03-31 22:26:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-03-31 22:26:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-03-31 22:26:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"User registered successfully","service":"crm-auth-be","timestamp":"2025-03-31 22:26:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"User created successfully","service":"crm-auth-be","timestamp":"2025-03-31 22:26:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:36:32"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:36:32"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:37:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:38:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:38:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:38:06"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:38:06"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:38:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:38:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:39:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:39:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:39:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:39:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:40:11"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:40:11"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:40:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:40:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:40:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:40:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:40:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:40:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:40:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:40:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:41:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:41:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:42:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:42:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:42:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:42:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:43:08"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:43:08"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:43:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:43:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:44:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:44:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:44:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:44:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:45"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:45"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:45:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:45:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:08"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:08"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:48"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:48"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:50"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:50"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:51"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:51"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:46:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:46:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:47:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:47:02"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:47:32"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:47:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:47:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:48:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:48:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-04-01 14:48:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-04-01 14:48:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-04-01 14:48:19"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: Operation `crm-auth-be-users.insertOne()` buffering timed out after 10000ms","service":"crm-auth-be","timestamp":"2025-04-01 14:48:29"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 14:48:29"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 14:48:44"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:53:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:53:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 14:53:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:53:09"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:53:09"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:53:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:53:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:55:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:55:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:55:51"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:55:51"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 14:56:06"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 14:56:06"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 14:56:06"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:10"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:10"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:17"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:17"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:23"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:17:50"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:17:50"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:18:10"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:18:10"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:18:10"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:18:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:18:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:20:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:20:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:20:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Starting server...","service":"crm-auth-be","timestamp":"2025-04-01 15:21:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:21:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:23:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:23:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:23:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:23:26"}
+{"level":"\u001b[31merror\u001b[39m","message":"connect ECONNREFUSED 127.0.0.1:27017","service":"crm-auth-be","timestamp":"2025-04-01 15:24:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:24:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:24:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:25:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:25:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:25:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:25:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:25:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:25:44"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:25:44"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:25:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:25:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:25:54"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:25:54"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: MongoServerError E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:25:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:26:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:26:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user:  E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[31merror\u001b[39m","message":"DbError: Database operation failed","service":"crm-auth-be","timestamp":"2025-04-01 15:26:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:26:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:26:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:27:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 3001","service":"crm-auth-be","timestamp":"2025-04-01 15:27:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"POST /api/auth/create","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Create user request received","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Attempting to register user","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[31merror\u001b[39m","message":"Error registering user: MongoServerError E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[31merror\u001b[39m","message":"ApiError: 400 - E11000 duplicate key error collection: crm-auth.crm-auth-be-users index: email_1 dup key: { email: \"test@gmail.com\" }","service":"crm-auth-be","timestamp":"2025-04-01 15:27:34"}
+{"level":"\u001b[32minfo\u001b[39m","message":"MongoDB connected","service":"crm-auth-be","timestamp":"2025-04-01 15:48:18"}

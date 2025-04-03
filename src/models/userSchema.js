@@ -1,18 +1,15 @@
-// models/User.model.js
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
-const validator = require('validator');
 
 const User = new mongoose.Schema({
   // Core Identity
   email: {
     type: String,
-    required: function() { return !this.socialAuth?.googleId && !this.socialAuth?.facebookId }, // Required only for credential login
+    required: function () { return !this.socialAuth?.googleId  }, // Required only for credential login
     unique: true,
     lowercase: true,
     trim: true,
-    validate: [validator.isEmail, 'Invalid email format']
   },
 
   // Credential Auth
@@ -20,7 +17,8 @@ const User = new mongoose.Schema({
     type: String,
     minlength: 8,
     select: false,
-    required: function() { return !this.socialAuth } // Only required for local auth
+    required: function () { return !this.socialAuth } // Only required for local auth
+
   },
   passwordChangedAt: Date,
 
@@ -32,23 +30,20 @@ const User = new mongoose.Schema({
   // Two-Factor Authentication (2FA)
   twoFactorAuth: {
     enabled: { type: Boolean, default: false },
-    method: { 
-      type: String, 
-      enum: [ 'email', null],
-      default: null 
+    method: {
+      type: String,
+      enum: ['email', null],
+      default: null
     },
     secret: { type: String, select: false }, // For TOTP apps
     phone: { // For SMS 2FA
       type: String,
-      validate: [validator.isMobilePhone, 'Invalid phone number']
     },
     backupCodes: { // For recovery
       type: [String],
       select: false
     }
   },
-
-  // Verification & Security
   isEmailVerified: { type: Boolean, default: false },
   verificationTokens: {
     email: String,
@@ -71,7 +66,6 @@ const User = new mongoose.Schema({
     }
   }],
 
-  // Account Protection
   failedLoginAttempts: { type: Number, default: 0, select: false },
   lockUntil: { type: Date, select: false },
   accountRecovery: {
@@ -81,4 +75,18 @@ const User = new mongoose.Schema({
 
 }, { timestamps: true });
 
-const userSchema=mongoose.model("crm-auth-be-user",User);
+
+User.methods.compareHash = async function (candidatepassword) {
+  return await bcrypt.compare(candidatepassword, this.password)
+}
+
+User.pre("save", async function (next) {
+  if (!this.isModified('password')) return next();
+
+  const salt = await bcrypt.genSalt(10);
+  this.password = await bcrypt.hash(this.password, salt);
+  next()
+})
+
+module.exports = mongoose.model("crm-auth-be-user", User);
+

@@ -5,6 +5,11 @@
   "type": "module",
   
   "scripts": {
+    "start": "npm run build && cross-env NODE_ENV=production node ./dist/app",
+    "build": "npm run clean && npm run build:ts",
+    "dev": "cross-env NODE_ENV=development tsx watch --clear-screen=false infrasturcture/app.ts",
+    "clean": "rimraf dist",
+    "build:ts": "tsc && tsc-alias",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

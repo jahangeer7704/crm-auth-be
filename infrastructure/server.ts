@@ -1,7 +1,6 @@
 import { appLogger } from "@/utils/observability/logger/appLogger.js";
 import { appConfig } from "@/config/readers/appConfig.js";
 import express, { type Express } from "express";
-
 class Server {
     private static instance: Server;
     private readonly App: Express

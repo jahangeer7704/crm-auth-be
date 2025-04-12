@@ -16,3 +16,4 @@ export interface IAppConfig {
         redisPassword: string;
     }
 }
+

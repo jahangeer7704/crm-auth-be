@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "/infrasturcture/server.ts",
   "type": "module",
-  
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node ./dist/app",
     "build": "npm run clean && npm run build:ts",

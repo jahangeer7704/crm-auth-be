@@ -8,28 +8,37 @@ register.setDefaultLabels({
 
 client.collectDefaultMetrics({ register });
 
-
 export const authRequestDuration = new client.Histogram({
-  name: 'auth_request_duration_seconds',        
-  help: 'Duration of auth-related requests',    
-  labelNames: ['route', 'method', 'status'],     
-  buckets: [0.1, 0.25, 0.5, 1, 1.5, 2, 3, 5, 10], 
+  name : 'auth_request_duration_seconds',
+  help : 'Duration of authentication related request',
+  labelNames : ['route', 'method', 'status'],
+  buckets : [0.1,0.25,0.5,1,2,5,10]
 });
+
 register.registerMetric(authRequestDuration);
 
-export const loginAttempts = new client.Counter({
-  name: 'login_attempts_total',
-  help: 'Total number of login attempts',
-  labelNames: ['status'], 
+export const LoginAttempts = new client.Counter({
+  name : 'total_login_attempt',
+  help : 'Total Number of Login Attempts',
+  labelNames : ['status'],
 });
-register.registerMetric(loginAttempts);
 
+register.registerMetric(LoginAttempts);
 
-export const activeSessions = new client.Gauge({
-  name: 'active_sessions',
-  help: 'Current number of active user sessions',
+export const RegisterCount = new client.Counter({
+  name : 'register_count',
+  help : 'Total Number of New User',
+  labelNames : ['status']
 });
-register.registerMetric(activeSessions);
 
+register.registerMetric(RegisterCount);
 
-export { register };
+export const ActiveSessions = new client.Gauge({
+  name : 'active_session',
+  help : 'Current Number of active session'
+});
+
+register.registerMetric(ActiveSessions);
+
+export {register};
+

@@ -13,19 +13,12 @@ class LoggerFactory {
             http: 3,
             debug: 4
         },
-        colors: {
-            error: 'red',
-            warn: 'yellow',
-            info: 'green',
-            http: 'magenta',
-            debug: 'white'
-        },
         serviceName: 'GATEWAY',
         styles: {
-            error: chalk.bold.blackBright.bgHex('#df2935'),
+            error: chalk.bold.blackBright.bgHex('#B20000'),
             warn: chalk.bold.blackBright.bgHex('#fcff4b'),
             info: chalk.bold.blackBright.bgHex('#00f5d4'),
-            http: chalk.bold.blackBright.bgHex('#5fa8d3'),
+            http: chalk.bold.blackBright.bgHex('#ff0f7b'),
             debug: chalk.bold.blackBright.bgHex('#725ac1')
         },
         icon: {
@@ -125,7 +118,6 @@ class LoggerFactory {
 
     public static getInstance(): winston.Logger {
         if (!LoggerFactory.instance) {
-            winston.addColors(this.config.colors);
 
             LoggerFactory.instance = winston.createLogger({
                 level: this.level,

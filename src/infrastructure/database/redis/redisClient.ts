@@ -27,7 +27,7 @@ class RedisClient {
     }
     public async connect(): Promise<void> {
         if (this.isConnected) return;
-    
+
         try {
             await this.redisClient.ping(); // test the connection
             this.isConnected = true;
@@ -37,7 +37,7 @@ class RedisClient {
             throw err;
         }
     }
-    
+
     public getClient(): Redis {
         return this.redisClient
     }

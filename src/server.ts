@@ -10,6 +10,7 @@ class Server {
     private constructor() {
         this.App = express()
         this.setUpRoutes();
+        this.test();
     }
     public static getInstance() {
         if (!Server.instance) {

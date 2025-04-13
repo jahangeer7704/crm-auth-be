@@ -20,6 +20,9 @@ class AppLogger {
   public debug(service: string, msg: string) {
     Logger.debug(this.formatMessage(service, '🐞', msg));
   }
+  public http(service: string, msg: string) {
+    Logger.http(this.formatMessage(service, '🌐', msg));
+  }
 private constructor(){}
 public static getInstance(){
   if(!AppLogger.instance){

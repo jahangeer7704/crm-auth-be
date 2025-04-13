@@ -40,7 +40,6 @@ export const ActiveSessions = new client.Gauge({
 
 register.registerMetric(ActiveSessions);
 
-console.log("metrics");
 
 
 export {register};

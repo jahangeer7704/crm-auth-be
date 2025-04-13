@@ -4,9 +4,7 @@ import express, { type Express } from "express";
 import { redisClient } from "@/infrastructure/database/redis/redisClient.js";
 import { ActiveSessions, authRequestDuration, LoginAttempts } from "@/utils/observability/metrics.js";
 import { errorHandler } from "./infrastructure/http/middlewares/errorHandler.js";
-import { AsyncHandler } from "./application/auth/handlers/asyncHandler.js";
 import { morganMiddleware } from "./utils/observability/logger/httpLogger.js";
-import { ApiError, InternalServerError } from "./utils/errors/ApiError.js";
 
 class Server {
     private static instance: Server;
@@ -39,9 +37,7 @@ class Server {
 
     private handleRoutes() {
         // this.app.use('/metrics', metricsRouter)
-        this.app.get("/",AsyncHandler(async(req,res)=>{
-            throw new InternalServerError()
-        }))
+      
     }
     private handleErrors(): void {
         this.app.use(errorHandler);

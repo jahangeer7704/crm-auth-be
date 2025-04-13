@@ -8,6 +8,9 @@ export interface IAppConfig {
         xServiceKey: string,
         jwtSecret: string,
         xSignatureKey: string
+        googleClientId: string,
+        googleClientSecret: string,
+        googleRedirectUri: string
     }
     db: {
         mongoUri: string;

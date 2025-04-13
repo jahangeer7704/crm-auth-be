@@ -31,6 +31,11 @@ class AppConfig {
     private setAuthConfig(): void {
         this.config.auth.xSignatureKey = env.X_SIGNATURE;
         this.config.auth.xServiceKey = env.X_SERVICE_KEY;
+        this.config.auth.jwtSecret = env.JWT_SECRET;
+        this.config.app.allowedOrigin = env.ALLOWED_ORIGIN;
+        this.config.auth.googleClientId = env.GOOGLE_CLIENT_ID;
+        this.config.auth.googleClientSecret = env.GOOGLE_CLIENT_SECRET;
+        this.config.auth.googleRedirectUri = env.GOOGLE_REDIRECT_URI;
     }
 
 }

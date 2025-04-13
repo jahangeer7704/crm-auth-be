@@ -26,6 +26,12 @@ class Server {
         console.log("server metrics");
         
     }
+    private test(){
+        this.App.get('/', (req, res) => {
+            LoginAttempts.inc({status : "success"});
+            res.send("success");
+        })
+    }
     private listen() {
         this.App.listen(appConfig.app.port, () => {
             appLogger.info("server", `App is running at ${appConfig.app.port}`)

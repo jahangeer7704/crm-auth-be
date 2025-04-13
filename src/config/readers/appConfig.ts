@@ -1,6 +1,6 @@
 import { env } from "./env.js";
 import { defaultConfig } from "../constants/defaultConfig.js";
-import type { IAppConfig } from "../types/iAppConfig.js";
+import type { IAppConfig } from "../types/IAppConfig.js";
 class AppConfig {
     private static instance: AppConfig;
     public config: IAppConfig

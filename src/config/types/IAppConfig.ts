@@ -15,9 +15,5 @@ export interface IAppConfig {
         redisPort: number;
         redisPassword: string;
     }
-    
-    
 }
 
-
-export const __watchTrigger = true;

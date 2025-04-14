@@ -6,7 +6,7 @@ import { ActiveSessions, authRequestDuration, LoginAttempts } from "@/utils/obse
 import { errorHandler } from "./infrastructure/http/middlewares/errorHandler.js";
 import { morganMiddleware } from "./utils/observability/logger/httpLogger.js";
 import { indexRouter } from "./infrastructure/http/routes/index.route.js";
-
+import { rabbitMQClient } from "./infrastructure/rabbitmq/rabbitmqClient.js";
 class Server {
     private static instance: Server;
     private readonly app: Express
@@ -16,6 +16,7 @@ class Server {
 
     private async initDependencies() {
         await redisClient.connect()
+        await rabbitMQClient.connect()
     }
 
     public static getInstance() {

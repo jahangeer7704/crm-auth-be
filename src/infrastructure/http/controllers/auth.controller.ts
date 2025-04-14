@@ -1,6 +1,8 @@
-import type { Request, Response, NextFunction } from "express";
-import { GoogleAuthHandler } from "@/application/auth/handlers/googleCallbackHandler.js";
+import type { Request, Response } from "express";
+import { googleAuthHandler } from "@/application/auth/handlers/googleCallbackHandler.js";
 import passport from "passport";
+import { AsyncHandler } from "@/application/auth/handlers/asyncHandler.js";
+import { SuccessResponse } from "../responses/ApiResponse.js";
 class AuthController {
   private static instance: AuthController
   private constructor() { }
@@ -12,9 +14,19 @@ class AuthController {
     session: false,
   });
 
-  public googleCallback = (req: Request, res: Response, next: NextFunction) => {
-    GoogleAuthHandler.handleCallback(req, res, next);
-  };
+  public googleCallback = AsyncHandler(async (req: Request, res: Response) => {
+    const authResult = await googleAuthHandler.handleCallback(req);
+
+    res.cookie('jk_crm', authResult.refreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'strict',
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
+    res.header("Authorization", `Bearer ${authResult.accessToken}`);
+    return new SuccessResponse(
+      "Login successful").send(res)
+  });
 
   public static getInstance() {
     if (!AuthController.instance) {

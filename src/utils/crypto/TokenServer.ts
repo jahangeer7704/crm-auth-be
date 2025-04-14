@@ -43,8 +43,7 @@ export class TokenService {
         const hashedToken = await argon2.hash(refreshToken);
         const redisKey = `refresh:${userId}:${crypto.randomUUID()}`;
 
-        await redisClient.set(redisKey, hashedToken, 7 * 24 * 60 * 60); // 7 days
-
+        await redisClient.set(redisKey, hashedToken, 7 * 24 * 60 * 60);
         return { accessToken, refreshToken };
     }
 
@@ -56,7 +55,7 @@ export class TokenService {
     // 🔐 PRIVATE: Delete all refresh tokens for a user
     private async deleteUserTokens(userId: string): Promise<void> {
         const keys = await this.getUserRefreshKeys(userId);
-        if (keys.length > 0) {
+        if (keys?.length > 0) {
             await redisClient.delete(...keys);
         }
     }

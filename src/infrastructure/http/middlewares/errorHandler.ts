@@ -10,11 +10,11 @@ export async function errorHandler(
     _next: NextFunction
 ) {
     if (err instanceof ApiError) {
-        console.log(err);
-        
+        appLogger.error('global-error', JSON.stringify(err));
+
         ApiError.handleError(err, res);
     } else {
-        appLogger.error('g-error', JSON.stringify(err));
+        appLogger.error('global-error', JSON.stringify(err));
         if (appConfig.app.nodeEnv === 'development') {
             return res.status(StatusCode.INTERNAL_SERVER_ERROR).send(err);
         }

@@ -3,24 +3,61 @@ import jwt from 'jsonwebtoken';
 import argon2 from 'argon2';
 import { redisClient } from '@/infrastructure/database/redis/redisClient.js';
 import { appConfig } from '@/config/readers/appConfig.js';
+import { appLogger } from '../observability/logger/appLogger.js';
+import { UnprocessableEntityError } from '../errors/ApiError.js';
+
 export class TokenService {
-    async generateTokens(payload: any) {
-        const accessToken = jwt.sign(
-            payload,
-            appConfig.auth.jwtSecret,
-            { expiresIn: '15m' }
-        );
+    public async generateTokens(payload: any) {
+        try {
+            await this.deleteUserTokens(payload.userId);
+            return await this.createAndStoreTokens(payload.userId, payload);
+        } catch (error) {
+            appLogger.error('token-service', `Error generating tokens: ${error}`);
+            throw new UnprocessableEntityError('Failed to generate tokens');
+        }
+    }
+
+    public async rotateRefreshToken(userId: string, incomingRefreshToken: string) {
+        try {
+            const keys = await this.getUserRefreshKeys(userId);
+
+            for (const key of keys) {
+                const hashedToken = await redisClient.get(key);
+                if (hashedToken && await argon2.verify(hashedToken, incomingRefreshToken)) {
+                    await redisClient.delete(key); // Invalidate old token
+                    return await this.createAndStoreTokens(userId, { userId });
+                }
+            }
+
+            throw new Error('Invalid or expired refresh token');
+        } catch (error) {
+            appLogger.error('token-service', `Error rotating refresh token: ${error}`);
+            throw new UnprocessableEntityError('Failed to rotate refresh token');
+        }
+    }
+
+    private async createAndStoreTokens(userId: string, payload: any) {
+        const accessToken = jwt.sign(payload, appConfig.auth.jwtSecret, { expiresIn: '5m' });
 
         const refreshToken = crypto.randomBytes(64).toString('hex');
         const hashedToken = await argon2.hash(refreshToken);
+        const redisKey = `refresh:${userId}:${crypto.randomUUID()}`;
 
-        // Store in Redis
-        await redisClient.set(
-            `refresh:${payload.userId}:${crypto.randomUUID()}`,
-            hashedToken,
-            7 * 24 * 60 * 60
-        );
+        await redisClient.set(redisKey, hashedToken, 7 * 24 * 60 * 60); // 7 days
 
         return { accessToken, refreshToken };
+    }
+
+    private async getUserRefreshKeys(userId: string): Promise<string[]> {
+        const pattern = `refresh:${userId}:*`;
+        return await redisClient.get(pattern);
+    }
+
+    // 🔐 PRIVATE: Delete all refresh tokens for a user
+    private async deleteUserTokens(userId: string): Promise<void> {
+        const keys = await this.getUserRefreshKeys(userId);
+        if (keys.length > 0) {
+            await redisClient.delete(...keys);
+        }
     }
 }

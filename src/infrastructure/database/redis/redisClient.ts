@@ -74,13 +74,13 @@ class RedisClient {
 
         }
     }
-    public async delete(key: string): Promise<void> {
+    public async delete(...keys: string[]): Promise<void> {
         try {
-            await this.redisClient.del(key);
-            appLogger.error("redis", `key removed : ${key}`)
+            await this.redisClient.del(...keys);
+            appLogger.info("redis", `Keys removed: ${keys.join(", ")}`)
 
         } catch (error) {
-            appLogger.error("redis", `Error on removing  key : ${key}`)
+            appLogger.error("redis", `Error on removing  key : ${keys}`)
         }
     }
 

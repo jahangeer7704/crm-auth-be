@@ -22,7 +22,7 @@ class AppConfig {
     }
 
     private setDBConfig(): void {
-        this.config.db.mongoUri = env.MONGODB_URI;
+        this.config.db.rabbitUri = env.RABBITMQ_URI;
         this.config.db.redisHost = env.REDIS_HOST;
         this.config.db.redisPort = env.REDIS_PORT;
         this.config.db.redisPassword = env.REDIS_PASSWORD;

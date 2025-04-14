@@ -3,7 +3,7 @@ import { z } from "zod"
 export const envSchema = z.object({
     NODE_ENV: z.enum(['development', 'production']).default('development'),
     PORT: z.string().transform(Number).pipe(z.number().min(1).max(65535)),
-    MONGODB_URI: z.string().url(),
+    RABBITMQ_URI: z.string().url(),
     REDIS_HOST: z.string(),
     REDIS_PORT: z.string().transform(Number).pipe(z.number().min(1).max(65535)),
     REDIS_PASSWORD: z.string().default(''),

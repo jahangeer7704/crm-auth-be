@@ -13,7 +13,7 @@ export interface IAppConfig {
         googleRedirectUri: string
     }
     db: {
-        mongoUri: string;
+        rabbitUri: string;
         redisHost: string;
         redisPort: number;
         redisPassword: string;

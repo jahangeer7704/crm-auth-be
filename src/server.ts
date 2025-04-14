@@ -5,7 +5,7 @@ import { redisClient } from "@/infrastructure/database/redis/redisClient.js";
 import { ActiveSessions, authRequestDuration, LoginAttempts } from "@/utils/observability/metrics.js";
 import { errorHandler } from "./infrastructure/http/middlewares/errorHandler.js";
 import { morganMiddleware } from "./utils/observability/logger/httpLogger.js";
-import { indexRouter } from "./infrastructure/http/routes/index.routes.js";
+import { indexRouter } from "./infrastructure/http/routes/index.route.js";
 
 class Server {
     private static instance: Server;

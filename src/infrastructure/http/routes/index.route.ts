@@ -1,4 +1,5 @@
 import { Router } from "express"
+import { healthRouter } from "./health.route.js"
 class IndexRouter {
     private static instance: IndexRouter
     private readonly router: Router
@@ -7,7 +8,7 @@ class IndexRouter {
         this.initRoutes()
     }
     private initRoutes() {
-        this.router.use("/health",)
+        this.router.use("/health",healthRouter)
     }
     public getRouter() {
         return this.router

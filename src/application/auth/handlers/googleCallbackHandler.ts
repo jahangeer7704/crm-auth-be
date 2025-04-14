@@ -2,6 +2,7 @@ import type { Request, Response, NextFunction } from "express";
 import passport from "passport";
 import { appConfig } from "@/config/readers/appConfig.js";
 import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import { TokenService } from "@/utils/crypto/TokenServer.js";
 
 
 export class GoogleAuthHandler {
@@ -10,7 +11,7 @@ export class GoogleAuthHandler {
       'google',{
         session: false,
       },
-      (err: Error | null, user: Record<string, any>, info: any) => {
+      async(err: Error | null, user: Record<string, any>, info: any) => {
         if (err) {
           appLogger.error('auth', `Error during Google authentication: ${err}`);
           return GoogleAuthHandler.redirectWithMessage(res, 'login+failed');
@@ -24,15 +25,29 @@ export class GoogleAuthHandler {
           return GoogleAuthHandler.redirectWithMessage(res, message);
         }
 
-        req.logIn(user, (loginErr) => {
-          if (loginErr) {
-            appLogger.error('auth', `Error during login: ${loginErr}`);
-            return GoogleAuthHandler.redirectWithMessage(res, 'login+failed');
+        try {
+            // Generate tokens
+            const tokenService = new TokenService();
+            const tokens = await tokenService.generateTokens({
+              userId: user.gid,
+              email: user.email,
+            });
+  
+            appLogger.info('auth', `User authenticated successfully: ${user.email}`);
+            res.cookie('jk_crm', tokens.refreshToken, {
+                httpOnly: true,
+                secure: true,
+                sameSite: 'strict',
+                maxAge: 7 * 24 * 60 * 60 * 1000,
+              });
+              
+              res.setHeader('Authorization', `Bearer ${tokens.accessToken}`);
+              
+              return res.status(200).json({ message: 'Login successful' });
+          } catch (tokenError) {
+            appLogger.error('auth', `Error generating tokens: ${tokenError}`);
+            return res.status(500).json({ message: 'Token generation failed' });
           }
-
-          appLogger.info('auth', `User authenticated successfully: ${user.email}`);
-          return res.redirect(`${appConfig.auth.clientUrl}/hello`);
-        });
       }
     )(req, res, next);
   }

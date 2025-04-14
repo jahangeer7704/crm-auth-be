@@ -5,6 +5,7 @@ import { redisClient } from "@/infrastructure/database/redis/redisClient.js";
 import { ActiveSessions, authRequestDuration, LoginAttempts } from "@/utils/observability/metrics.js";
 import { errorHandler } from "./infrastructure/http/middlewares/errorHandler.js";
 import { morganMiddleware } from "./utils/observability/logger/httpLogger.js";
+import { indexRouter } from "./infrastructure/http/routes/index.routes.js";
 
 class Server {
     private static instance: Server;
@@ -37,6 +38,7 @@ class Server {
 
     private handleRoutes() {
         // this.app.use('/metrics', metricsRouter)
+        this.app.use("/api",indexRouter)
       
     }
     private handleErrors(): void {

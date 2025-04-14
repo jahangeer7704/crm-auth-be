@@ -18,5 +18,9 @@ export interface IAppConfig {
         redisPort: number;
         redisPassword: string;
     }
+    mq : {
+        rabbitMqUrl : string;
+        queue : string;
+    }
 }
 

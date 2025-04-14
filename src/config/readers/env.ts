@@ -31,6 +31,5 @@ class EnvValidator {
     public init(): z.infer<typeof envSchema> {
         return this.env
     }
-
 }
 export const env = EnvValidator.getInstance().init()

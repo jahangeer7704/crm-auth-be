@@ -18,23 +18,13 @@ export class PassportService {
         this.verifyCallback.bind(this)
       )
     );
-
-    passport.serializeUser((user, done) => {
-      done(null, user);
-    });
-
-    passport.deserializeUser((user: Record<string, any>, done) => {
-      done(null, user);
-    });
   }
 
   public initialize() {
     return passport.initialize();
   }
 
-  public session() {
-    return passport.session();
-  }
+ 
 
   private async verifyCallback(
     req: Request,
@@ -52,7 +42,7 @@ export class PassportService {
       };
 
 
-      return done(null, { ...customUser, role:"" });
+      return done(null,customUser);
     } catch (error) {
       appLogger.error('passport', JSON.stringify(error));
       return done(null, false, { message: JSON.stringify(error) });
@@ -60,4 +50,3 @@ export class PassportService {
   }
 }
 
-export const passportService = new PassportService();

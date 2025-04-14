@@ -23,7 +23,7 @@ class RabbitMQClient implements IRabbitMqClient{
         if (this.isConnected) return;
 
         try {
-            this.connection = await amqp.connect(appConfig.db.rabbitUri);
+            this.connection = await amqp.connect(appConfig.mq.rabbitUri);
             this.channel = await this.connection.createChannel();
 
             this.connection.on("error", (err) => {

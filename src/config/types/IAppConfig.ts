@@ -10,16 +10,16 @@ export interface IAppConfig {
         xSignatureKey: string
         googleClientId: string,
         googleClientSecret: string,
-        googleRedirectUri: string
+        googleRedirectUri: string,
+        clientUrl: string
     }
     db: {
-        rabbitUri: string;
         redisHost: string;
         redisPort: number;
         redisPassword: string;
     }
     mq : {
-        rabbitMqUrl : string;
+        rabbitUri : string;
         queue : string;
     }
 }

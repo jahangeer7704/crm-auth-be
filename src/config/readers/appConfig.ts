@@ -9,6 +9,7 @@ class AppConfig {
         this.setAppConfig()
         this.setAuthConfig()
         this.setDBConfig()
+        this.setMQConfig()
     }
     public static getInstance() {
         if (!AppConfig.instance) {
@@ -22,12 +23,14 @@ class AppConfig {
     }
 
     private setDBConfig(): void {
-        this.config.db.rabbitUri = env.RABBITMQ_URI;
         this.config.db.redisHost = env.REDIS_HOST;
         this.config.db.redisPort = env.REDIS_PORT;
         this.config.db.redisPassword = env.REDIS_PASSWORD;
     }
+    private setMQConfig() {
+        this.config.mq.rabbitUri = env.RABBITMQ_URI;
 
+    }
     private setAuthConfig(): void {
         this.config.auth.xSignatureKey = env.X_SIGNATURE;
         this.config.auth.xServiceKey = env.X_SERVICE_KEY;
@@ -36,6 +39,7 @@ class AppConfig {
         this.config.auth.googleClientId = env.GOOGLE_CLIENT_ID;
         this.config.auth.googleClientSecret = env.GOOGLE_CLIENT_SECRET;
         this.config.auth.googleRedirectUri = env.GOOGLE_REDIRECT_URI;
+        this.config.auth.clientUrl = env.CLIENT_URL;
     }
 
 }

@@ -1,9 +1,10 @@
 import type { LoginResponseDTO } from "@/application/shared/dtos/LoginRequestDTO.js";
-import { Email } from "@/domain/valueObjects/Email.js";
 import {rabbitMQClient} from "@/infrastructure/rabbitmq/rabbitmqClient.js"
 import { appLogger } from "@/utils/observability/logger/appLogger.js";
 import { Password } from "@/domain/valueObjects/Password.js";
 import { AuthFailureError } from "@/utils/errors/ApiError.js";
+import { TokenService } from "@/utils/crypto/TokenServer.js";
+import { da } from "date-fns/locale";
 export class LoginUseCase{
     private static instance : LoginUseCase;
 
@@ -16,7 +17,7 @@ export class LoginUseCase{
         return LoginUseCase.instance;
     }
 
-    public async execute(email:string , password:string) : LoginResponseDTO  {
+    public async execute(email:string , password:string) : Promise<LoginResponseDTO | undefined | void>  {
         try{
             
             const requestQueue = 'auth.login.request';
@@ -30,20 +31,19 @@ export class LoginUseCase{
             await rabbitMQClient.sendToQueue(requestQueue,JSON.stringify(payLoad));
             
             
-            await rabbitMQClient.consumeFromQueue(responseQueue,async (msg) => {
+            return  await rabbitMQClient.consumeFromQueue(responseQueue,async (msg) : Promise<LoginResponseDTO> => {
                 const response = JSON.parse(msg.content.toString());
-                if(response.success) {
-                    const {user} = response;
-                    if(!await Password.compare(user.password, password)){
-                        appLogger.error("Login","Entered Wrong Passowrd");
-                        throw new AuthFailureError("Wrong Password");
+                    if(!response.success || !await Password.compare(response?.user.password, password)){
+                        appLogger.error("Login","Invalid Credentials");
+                        throw new AuthFailureError("Invalid Credentials");
                     }
-                     
-                }
-                else {
-                    appLogger.error("Login", "User Not Exist");
+                    const user = response;
+                    const data = {
+                        userId : user.id,
+                        email : user.email
+                    }
+                    return await TokenService.generateTokens(data);
                     
-                }
             })
             
         } catch(error) {

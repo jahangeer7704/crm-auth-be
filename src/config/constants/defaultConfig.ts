@@ -1,6 +1,6 @@
 export const defaultConfig = {
     app: {},
     db: {},
-    auth: {}
-
+    auth: {},
+    mq : {}
 }

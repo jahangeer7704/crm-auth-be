@@ -18,6 +18,7 @@ class EnvValidator {
         X_SERVICE_KEY: z.string().min(1),
         ALLOWED_ORIGIN: z.string().url(),
         JWT_SECRET: z.string().min(1),
+        RABBITMQ_URL : z.string().url()
     })
     private constructor() {
         this.env = this.validator();
@@ -42,6 +43,5 @@ class EnvValidator {
     public init(): z.infer<typeof EnvValidator.envSchema> {
         return this.env
     }
-
 }
 export const env = EnvValidator.getInstance().init()

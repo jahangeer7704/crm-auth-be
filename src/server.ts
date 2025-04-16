@@ -45,10 +45,9 @@ class Server {
     }
 
     private handleRoutes() {
-        // this.app.use('/metrics', metricsRouter)
-        this.app.use("/api", indexRouter)
-
-
+        
+        this.app.use("/api",indexRouter)
+      
     }
     private handleErrors(): void {
         this.app.use(errorHandler);

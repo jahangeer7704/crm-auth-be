@@ -2,11 +2,13 @@ import { AsyncHandler } from "@/application/auth/handlers/asyncHandler.js";
 import { healthHandler } from "@/application/auth/handlers/healthHandler.js";
 import type { Request, Response } from "express";
 import { SuccessResponse } from "../responses/ApiResponse.js";
+import { LoginAttempts } from "@/utils/observability/metrics.js";
 
 class HealthController {
     private static instance: HealthController
     private constructor() { }
     public control = AsyncHandler(async (_req: Request, res: Response) => {
+        LoginAttempts.inc({status:"success"});
         const healthReport = await healthHandler.handle()
         return new SuccessResponse("Health check successful", healthReport).send(res)
     })

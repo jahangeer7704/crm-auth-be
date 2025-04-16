@@ -6,8 +6,9 @@ import { appConfig } from '@/config/readers/appConfig.js';
 import { appLogger } from '../observability/logger/appLogger.js';
 import { UnprocessableEntityError } from '../errors/ApiError.js';
 
+import type { LoginResponseDTO } from '@/application/shared/dtos/LoginRequestDTO.js';
 export class TokenService {
-    public async generateTokens(payload: any) {
+    public static async generateTokens(payload: any) : Promise<LoginResponseDTO> {
         try {
             await this.deleteUserTokens(payload.userId);
             return await this.createAndStoreTokens(payload.userId, payload);

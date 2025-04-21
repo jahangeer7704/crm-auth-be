@@ -15,16 +15,16 @@ class HealthUseCase {
     }
 
     public async execute(): Promise<HealthResponseDTO> {
-       try {
-        const uptime = process.uptime();
-        const timestamp = new Date().toISOString();
-        appLogger.info("health", `Health check successful: uptime ${uptime}, timestamp ${timestamp}`);
-        return new HealthResponseDTO({ uptime, timestamp });
-       } catch (error) {
-        appLogger.error("health", `Error processing health check: ${error}`);
-        throw new UnprocessableEntityError("Error processing health check");
-       }
-        
+        try {
+            const uptime = process.uptime();
+            const timestamp = new Date().toISOString()
+            appLogger.info("health", `Health check successful: uptime ${uptime}, timestamp ${timestamp}`);
+            return new HealthResponseDTO({ uptime, timestamp });
+        } catch (error) {
+            appLogger.error("health", `Error processing health check: ${error}`);
+            throw new UnprocessableEntityError("Error processing health check");
+        }
+
     }
 }
 export const healthUseCase = HealthUseCase.getInstance();

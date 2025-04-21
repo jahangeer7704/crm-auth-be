@@ -10,7 +10,6 @@ class EnvValidator {
     private readonly env: z.infer<typeof envSchema>;
     private constructor() {
         this.env = this.validator();
-
     };
     public static getInstance() {
         if (!EnvValidator.instance) {

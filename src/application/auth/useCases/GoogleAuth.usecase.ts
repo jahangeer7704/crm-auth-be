@@ -1,7 +1,7 @@
 import type { Request } from 'express';
 import { appLogger } from '@/utils/observability/logger/appLogger.js';
 import passport from "passport";
-import { TokenService } from "@/utils/crypto/TokenServer.js";
+import { tokenService } from "@/utils/crypto/TokenServer.js";
 import { InternalServerError } from '@/utils/errors/ApiError.js';
 import type { AuthResult } from '@/application/shared/dtos/AuthResult.dto.js';
 class GoogleAuthUseCase {
@@ -33,7 +33,7 @@ class GoogleAuthUseCase {
                     }
                     try {
                         appLogger.info('auth', `Generating tokens for authenticated user: ${user.gid}`);
-                        const tokenService = new TokenService();
+
                         const tokens = await tokenService.generateTokens({
                             userId: user.gid,
                             email: user.email,

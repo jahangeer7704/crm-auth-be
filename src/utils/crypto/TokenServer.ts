@@ -7,11 +7,19 @@ import { appLogger } from '../observability/logger/appLogger.js';
 import { UnprocessableEntityError } from '../errors/ApiError.js';
 
 import type { LoginResponseDTO } from '@/application/shared/dtos/LoginRequestDTO.js';
-export class TokenService {
-    public static async generateTokens(payload: any) : Promise<LoginResponseDTO> {
+ class TokenService {
+    private static instance: TokenService;
+    private constructor() { }
+    public static getInstance(): TokenService {
+        if (!TokenService.instance) {
+            TokenService.instance = new TokenService();
+        }
+        return TokenService.instance;
+    }
+    public  async generateTokens(payload: any): Promise<LoginResponseDTO> {
         try {
-            await this.deleteUserTokens(payload.userId);
-            return await this.createAndStoreTokens(payload.userId, payload);
+            await TokenService.instance.deleteUserTokens(payload.userId);
+            return await TokenService.instance.createAndStoreTokens(payload.userId, payload);
         } catch (error) {
             appLogger.error('token-service', `Error generating tokens: ${error}`);
             throw new UnprocessableEntityError('Failed to generate tokens');
@@ -61,3 +69,5 @@ export class TokenService {
         }
     }
 }
+
+export const tokenService = TokenService.getInstance();

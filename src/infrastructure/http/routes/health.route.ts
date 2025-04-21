@@ -24,4 +24,5 @@ class HealthRouter {
     }
 
 }
-export const healthRouter = HealthRouter.getInstance().getRouter()
+export const healthRouter=HealthRouter.getInstance().getRouter()
+

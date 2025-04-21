@@ -10,6 +10,8 @@ class AuthRouter {
     private initRoutes() {
         this.router.get("/google/login",authController.googleLogin)
         this.router.get("/google/callback",authController.googleCallback)
+        // this.router.post("/login",)
+
     
     }
     public getRouter() {

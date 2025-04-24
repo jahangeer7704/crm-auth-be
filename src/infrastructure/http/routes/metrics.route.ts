@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { register } from "@/utils/observability/metrics.js";
+import { register } from "@/shared/observability/metrics.js";
 
 
 const router = Router();

@@ -3,10 +3,10 @@ import jwt from 'jsonwebtoken';
 import argon2 from 'argon2';
 import { redisClient } from '@/infrastructure/database/redis/redisClient.js';
 import { appConfig } from '@/config/readers/appConfig.js';
-import { appLogger } from '../observability/logger/appLogger.js';
+import { appLogger } from '../../observability/logger/appLogger.js';
 import { UnprocessableEntityError } from '../errors/ApiError.js';
 
-import type { LoginResponseDTO } from '@/application/shared/dtos/LoginRequestDTO.js';
+import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.js';
  class TokenService {
     private static instance: TokenService;
     private constructor() { }

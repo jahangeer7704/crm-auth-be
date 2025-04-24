@@ -1,12 +1,12 @@
 {
   "name": "crm-auth-be",
   "version": "1.0.0",
-  "main": "/infrasturcture/server.ts",
+  "main": "src/interfaces/rest/index.ts",
   "type": "module",
   "scripts": {
-    "start": "npm run build && cross-env NODE_ENV=production node ./dist/app",
+    "start": "npm run build && cross-env NODE_ENV=production node dist/interfaces/rest/index.js",
     "build": "npm run clean && npm run build:ts",
-    "dev": "cross-env NODE_ENV=development tsx watch --clear-screen=false src/server.ts",
+    "dev": "cross-env NODE_ENV=development tsx watch --clear-screen=false src/interfaces/rest/index.ts",
     "clean": "rimraf dist",
     "build:ts": "tsc && tsc-alias",
     "test": "echo \"Error: no test specified\" && exit 1"

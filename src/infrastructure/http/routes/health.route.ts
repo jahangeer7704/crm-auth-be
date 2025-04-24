@@ -1,6 +1,6 @@
 import { Router } from "express"
 import { healthController } from "../controllers/health.controller.js"
-import { LoginAttempts } from "@/utils/observability/metrics.js"
+import { LoginAttempts } from "@/shared/observability/metrics.js"
 class HealthRouter {
     private static instance: HealthRouter
     private readonly router: Router

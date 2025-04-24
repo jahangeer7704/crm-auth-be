@@ -1,10 +1,11 @@
 import type { Request, Response } from "express";
 import passport from "passport";
-import { AsyncHandler } from "@/application/auth/handlers/asyncHandler.js";
+import { AsyncHandler } from "@/infrastructure/http/middlewares/asyncHandler.js";
 import { SuccessResponse } from "../responses/ApiResponse.js";
-import { loginHandler } from "@/application/auth/handlers/LoginHandler.js";
 import { LoginCommand } from "@/application/auth/commands/LoginCommand.js";
-import type { LoginRequestDTO } from "@/application/shared/dtos/LoginRequestDTO.js";
+import type { LoginRequestDTO } from "@/application/auth/dtos/LoginRequestDTO.js";
+import { googleAuthUseCase } from "@/application/auth/useCases/GoogleAuth.usecase.js";
+import { loginUseCase } from "@/application/auth/useCases/Login.usecase.js";
 class AuthController {
   private static instance: AuthController
   private constructor() { }
@@ -17,7 +18,7 @@ class AuthController {
   });
 
   public googleCallback = AsyncHandler(async (req: Request, res: Response) => {
-    const authResult = await loginHandler.handleGoogleAuth(req);
+    const authResult =await googleAuthUseCase.execute(req);
 
     res.cookie('jk_crm', authResult.refreshToken, {
       httpOnly: true,
@@ -35,7 +36,7 @@ class AuthController {
 
     const command= new LoginCommand(loginRequest.emailOrName,loginRequest.password)
 
-    const authResult=await loginHandler.handleJwtAuth(command)
+    const authResult=await loginUseCase.execute(command)
   });
 
   public static getInstance() {

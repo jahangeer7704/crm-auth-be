@@ -1,9 +1,9 @@
 import type { Request } from 'express';
-import { appLogger } from '@/utils/observability/logger/appLogger.js';
+import { appLogger } from '@/shared/observability/logger/appLogger.js';
 import passport from "passport";
-import { tokenService } from "@/utils/crypto/TokenServer.js";
-import { InternalServerError } from '@/utils/errors/ApiError.js';
-import type { AuthResult } from '@/application/shared/dtos/AuthResult.dto.js';
+import { tokenService } from "@/shared/utils/crypto/TokenServer.js";
+import { InternalServerError } from '@/shared/utils/errors/ApiError.js';
+import type { AuthResult } from '@/application/auth/dtos/AuthResult.dto.js';
 class GoogleAuthUseCase {
     private static instance: GoogleAuthUseCase;
     private constructor() { }

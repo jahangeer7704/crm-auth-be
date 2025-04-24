@@ -1,5 +1,5 @@
-import { LoginRequestSchema } from "@/application/shared/dtos/LoginRequestDTO.js"
-import { ValidationError } from "@/utils/errors/ApiError.js"
+import { LoginRequestSchema } from "@/application/auth/dtos/LoginRequestDTO.js"
+import { ValidationError } from "@/shared/utils/errors/ApiError.js"
 
 export class LoginCommand {
     constructor(

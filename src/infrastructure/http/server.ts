@@ -1,13 +1,12 @@
-import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { appConfig } from "@/config/readers/appConfig.js";
 import express, { type Express } from "express";
 import { redisClient } from "@/infrastructure/database/redis/redisClient.js";
-import { ActiveSessions, authRequestDuration, LoginAttempts } from "@/utils/observability/metrics.js";
-import { errorHandler } from "./infrastructure/http/middlewares/errorHandler.js";
-import { morganMiddleware } from "./utils/observability/logger/httpLogger.js";
-import { indexRouter } from "./infrastructure/http/routes/index.route.js";
-import { rabbitMQClient } from "./infrastructure/rabbitmq/rabbitmqClient.js";
-import { PassportService } from "./infrastructure/providers/GoogleOAuth.js";
+import { errorHandler } from "./middlewares/errorHandler.js"; 
+import { morganMiddleware } from "@/shared/observability/logger/httpLogger.js"; 
+import { indexRouter } from "./routes/index.route.js"; 
+import { rabbitMQClient } from "../messaging/rabbitmq/rabbitmqClient.js"; 
+import { PassportService } from "../providers/auth/GoogleOAuth.js"; 
 import cors from "cors";
 class Server {
     private static instance: Server;
@@ -45,9 +44,9 @@ class Server {
     }
 
     private handleRoutes() {
-        
-        this.app.use("/api",indexRouter)
-      
+
+        this.app.use("/api", indexRouter)
+
     }
     private handleErrors(): void {
         this.app.use(errorHandler);
@@ -83,7 +82,7 @@ class Server {
 }
 
 
-Server.getInstance().init()
+export const server = Server.getInstance()
 
 
 

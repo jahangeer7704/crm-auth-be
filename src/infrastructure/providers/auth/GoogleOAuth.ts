@@ -1,5 +1,5 @@
 import { appConfig } from '@/config/readers/appConfig.js';
-import { appLogger } from '@/utils/observability/logger/appLogger.js';
+import { appLogger } from '@/shared/observability/logger/appLogger.js';
 import type { Request } from 'express';
 import passport, { type Profile } from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';

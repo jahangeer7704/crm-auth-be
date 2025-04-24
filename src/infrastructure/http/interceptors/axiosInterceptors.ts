@@ -11,6 +11,8 @@ class AxiosRequest {
         }
         return AxiosRequest.instance
     }
-    private request(config:AxiosRequestConfig){}
+    private request(config:AxiosRequestConfig){
+        
+    }
 
     }

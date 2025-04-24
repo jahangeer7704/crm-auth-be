@@ -1,9 +1,9 @@
-import type { LoginResponseDTO } from "@/application/shared/dtos/LoginResponseDTO.js";
-import { rabbitMQClient } from "@/infrastructure/rabbitmq/rabbitmqClient.js"
-import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import type { LoginResponseDTO } from "@/application/auth/dtos/LoginResponseDTO.js";
+import { rabbitMQClient } from "@/infrastructure/messaging/rabbitmq/rabbitmqClient.js"
+import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { Password } from "@/domain/valueObjects/Password.js";
-import { AuthFailureError } from "@/utils/errors/ApiError.js";
-import { tokenService } from "@/utils/crypto/TokenServer.js";
+import { AuthFailureError } from "@/shared/utils/errors/ApiError.js";
+import { tokenService } from "@/shared/utils/crypto/TokenServer.js";
 import { LoginCommand } from "../commands/LoginCommand.js";
  class LoginUseCase {
     private static instance: LoginUseCase;

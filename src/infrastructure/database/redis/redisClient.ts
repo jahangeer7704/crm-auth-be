@@ -1,5 +1,5 @@
 import { Redis } from "ioredis"
-import { appLogger } from "@/utils/observability/logger/appLogger.js"
+import { appLogger } from "@/shared/observability/logger/appLogger.js"
 import { appConfig } from "@/config/readers/appConfig.js"
 class RedisClient {
     private static instance: RedisClient;

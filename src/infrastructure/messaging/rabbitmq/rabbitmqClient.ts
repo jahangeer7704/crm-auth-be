@@ -1,6 +1,6 @@
 import amqp from 'amqplib';
 import type { ChannelModel, Channel, Message  } from "amqplib"
-import { appLogger } from '@/utils/observability/logger/appLogger.js';
+import { appLogger } from '@/shared/observability/logger/appLogger.js';
 import { appConfig } from '@/config/readers/appConfig.js';
 import type { IRabbitMqClient } from '@/domain/interfaces/IRabbitMqClient.js';
 

@@ -1,5 +1,5 @@
-import { ApiError, InternalServerError } from "@/utils/errors/ApiError.js";
-import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import { ApiError, InternalServerError } from "@/shared/utils/errors/ApiError.js";
+import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { appConfig } from "@/config/readers/appConfig.js";
 import type { NextFunction, Request, Response } from "express";
 import { StatusCode } from "../responses/ApiResponse.js";

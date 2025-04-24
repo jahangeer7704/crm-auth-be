@@ -1,6 +1,6 @@
 import { HealthResponseDTO } from "@/application/shared/dtos/HealthResponseDTO.js";
-import { UnprocessableEntityError } from "@/utils/errors/ApiError.js";
-import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import { UnprocessableEntityError } from "@/shared/utils/errors/ApiError.js";
+import { appLogger } from "@/shared/observability/logger/appLogger.js";
 
 class HealthUseCase {
     private static instance: HealthUseCase;

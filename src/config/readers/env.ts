@@ -1,6 +1,6 @@
 import { z } from "zod";
 import dotenv from "dotenv";
-import { appLogger } from "@/utils/observability/logger/appLogger.js";
+import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { envSchema } from "./schemas/envSchema.js";
 
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });

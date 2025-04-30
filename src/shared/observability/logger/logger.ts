@@ -13,7 +13,7 @@ class LoggerFactory {
             http: 3,
             debug: 4
         },
-        serviceName: 'GATEWAY',
+        serviceName: 'AUTH',
         styles: {
             error: chalk.bold.blackBright.bgHex('#B20000'),
             warn: chalk.bold.blackBright.bgHex('#fcff4b'),

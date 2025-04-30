@@ -2,12 +2,14 @@ import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
 import argon2 from 'argon2';
 import { redisClient } from '@/infrastructure/database/redis/redisClient.js';
-import { appConfig } from '@/config/readers/appConfig.js';
+import { appConfig } from '../../../../../crm-auth-be/src/config/readers/appConfig.js';
 import { appLogger } from '../../observability/logger/appLogger.js';
 import { UnprocessableEntityError } from '../errors/ApiError.js';
 
-import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.js';
- class TokenService {
+import type { LoginRequestDTO } from '../../../../../crm-auth-be/src/application/auth/dtos/LoginRequestDTO.js';
+import type { LoginResponseDTO } from '../../../../../crm-auth-be/src/application/auth/dtos/LoginResponseDTO.js';
+import type { TokenPayload } from '@/domain/interfaces/ITokenPayload.js';
+class TokenService {
     private static instance: TokenService;
     private constructor() { }
     public static getInstance(): TokenService {
@@ -16,7 +18,7 @@ import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.j
         }
         return TokenService.instance;
     }
-    public  async generateTokens(payload: any): Promise<LoginResponseDTO> {
+    public async generateTokens(payload: TokenPayload): Promise<LoginResponseDTO> {
         try {
             await TokenService.instance.deleteUserTokens(payload.userId);
             return await TokenService.instance.createAndStoreTokens(payload.userId, payload);
@@ -33,7 +35,7 @@ import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.j
             for (const key of keys) {
                 const hashedToken = await redisClient.get(key);
                 if (hashedToken && await argon2.verify(hashedToken, incomingRefreshToken)) {
-                    await redisClient.delete(key); // Invalidate old token
+                    await redisClient.delete(key);
                     return await this.createAndStoreTokens(userId, { userId });
                 }
             }
@@ -47,7 +49,6 @@ import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.j
 
     private async createAndStoreTokens(userId: string, payload: any) {
         const accessToken = jwt.sign(payload, appConfig.auth.jwtSecret, { expiresIn: '5m' });
-
         const refreshToken = crypto.randomBytes(64).toString('hex');
         const hashedToken = await argon2.hash(refreshToken);
         const redisKey = `refresh:${userId}:${crypto.randomUUID()}`;
@@ -58,10 +59,22 @@ import type { LoginResponseDTO } from '@/application/auth/dtos/LoginRequestDTO.j
 
     private async getUserRefreshKeys(userId: string): Promise<string[]> {
         const pattern = `refresh:${userId}:*`;
-        return await redisClient.get(pattern);
+        const keys: string[] = [];
+        let cursor = '0';
+
+        do {
+            const [nextCursor, foundKeys] = await redisClient.getClient().scan(cursor, 'MATCH', pattern, 'COUNT', 100);
+
+            keys.push(...foundKeys);
+            cursor = nextCursor;
+        } while (cursor !== '0');
+        return keys;
     }
 
-    // 🔐 PRIVATE: Delete all refresh tokens for a user
+
+
+
+
     private async deleteUserTokens(userId: string): Promise<void> {
         const keys = await this.getUserRefreshKeys(userId);
         if (keys?.length > 0) {

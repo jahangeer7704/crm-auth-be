@@ -14,7 +14,7 @@ export async function errorHandler(
 
         ApiError.handleError(err, res);
     } else {
-        appLogger.error('global-error', JSON.stringify(err));
+        appLogger.error('global-error-uk', JSON.stringify(err));
         if (appConfig.app.nodeEnv === 'development') {
             return res.status(StatusCode.INTERNAL_SERVER_ERROR).send(err);
         }

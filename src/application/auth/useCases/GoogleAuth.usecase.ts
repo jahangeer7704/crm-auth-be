@@ -2,24 +2,21 @@ import type { Request } from 'express';
 import { appLogger } from '@/shared/observability/logger/appLogger.js';
 import passport from "passport";
 import { tokenService } from "@/shared/utils/crypto/TokenServer.js";
-import { InternalServerError } from '@/shared/utils/errors/ApiError.js';
+import { InternalServerError, NotFoundError } from '@/shared/utils/errors/ApiError.js';
 import type { AuthResult } from '@/application/auth/dtos/AuthResult.dto.js';
-class GoogleAuthUseCase {
-    private static instance: GoogleAuthUseCase;
-    private constructor() { }
-    public static getInstance() {
-        if (!GoogleAuthUseCase.instance) {
-            GoogleAuthUseCase.instance = new GoogleAuthUseCase();
-        }
-        return GoogleAuthUseCase.instance;
-    }
+import { userService } from '@/infrastructure/httpclients/userService.js';
+import type { ICustomUser } from '@/domain/interfaces/ICustomUser.js';
+import type { IUser } from '@/domain/interfaces/IUserServiceResponse.js';
+export class GoogleAuthUseCase {
+
+
     public execute = (req: Request): Promise<AuthResult> => {
         appLogger.info('auth', 'GoogleAuthUseCase execution started');
         return new Promise<AuthResult>((resolve, reject) => {
             passport.authenticate(
                 'google',
                 { session: false },
-                async (err, user, info) => {
+                async (err, user: ICustomUser, info) => {
                     if (err) {
                         appLogger.error('auth', `Error during Google authentication: ${err}`);
                         return reject(new InternalServerError('GOOGLE_AUTH_ERROR'));
@@ -32,19 +29,46 @@ class GoogleAuthUseCase {
                         return reject(new InternalServerError('GOOGLE_AUTH_ERROR'));
                     }
                     try {
-                        appLogger.info('auth', `Generating tokens for authenticated user: ${user.gid}`);
+                        let getUser: IUser;
+                        try {
+                            getUser = await userService.getUser(user.email);
+                        } catch (error) {
+                            if (error instanceof NotFoundError) {
+                                try {
+                                    getUser = await userService.createUser({
+                                        userName: user.name,
+                                        email: user.email,
+                                        isOAuth: true,
+                                        avatarUrl: user.profile
+                                    });
+
+                                } catch (createUserError) {
+                                    appLogger.error("usecase", `Error while creating guser: ${error}`)
+
+                                    return reject(createUserError);
+                                }
+                                appLogger.info('auth', `New user created successfully: ${getUser.id}`);
+                            } else {
+                                appLogger.error('auth', `Unexpected error while fetching user: ${error}`);
+                                return reject(new InternalServerError('USER_FETCH_FAILED'));
+                            }
+                        }
 
                         const tokens = await tokenService.generateTokens({
-                            userId: user.gid,
-                            email: user.email,
+                            userId: getUser.id,
+                            email: getUser.email,
+                            isOAuth: getUser.isOAuth,
+                            role: getUser.role,
+                            emailVerified: getUser.emailVerified,
+                            avatarUrl: getUser.avatarUrl || "",
                         });
 
-                        appLogger.info('auth', `Tokens generated successfully for user: ${user.gid}`);
+
                         resolve({
                             accessToken: tokens.accessToken,
                             refreshToken: tokens.refreshToken,
                             user: {
-                                gid: user.gid,
+                                name: user.name,
                                 email: user.email,
                             },
                         });
@@ -58,4 +82,3 @@ class GoogleAuthUseCase {
     };
 }
 
-export const googleAuthUseCase = GoogleAuthUseCase.getInstance();

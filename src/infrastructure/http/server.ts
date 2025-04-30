@@ -8,6 +8,7 @@ import { indexRouter } from "./routes/index.route.js";
 import { rabbitMQClient } from "../messaging/rabbitmq/rabbitmqClient.js"; 
 import { PassportService } from "../providers/auth/GoogleOAuth.js"; 
 import cors from "cors";
+import helmet from "helmet";
 class Server {
     private static instance: Server;
     private readonly app: Express
@@ -38,7 +39,15 @@ class Server {
         })
     }
     private handleMiddleWares() {
-        this.app.use(cors())
+        this.app.use(cors({
+            origin: appConfig.app.allowedOrigin,
+            methods: ['GET', 'POST', 'PUT', 'DELETE'],
+            allowedHeaders: ['Content-Type', 'Authorization', "x-service"],
+            credentials: true,
+        }))
+        this.app.use(express.urlencoded({ extended: true }))
+        this.app.use(express.json({ limit: '50mb' }))
+        this.app.use(helmet())
         this.app.use(morganMiddleware)
         this.app.use(this.passportService.initialize())
     }

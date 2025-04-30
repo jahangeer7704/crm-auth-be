@@ -1,31 +1,41 @@
 import type { LoginResponseDTO } from "@/application/auth/dtos/LoginResponseDTO.js";
-import { rabbitMQClient } from "@/infrastructure/messaging/rabbitmq/rabbitmqClient.js"
-import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { Password } from "@/domain/valueObjects/Password.js";
 import { AuthFailureError } from "@/shared/utils/errors/ApiError.js";
 import { tokenService } from "@/shared/utils/crypto/TokenServer.js";
 import { LoginCommand } from "../commands/LoginCommand.js";
- class LoginUseCase {
-    private static instance: LoginUseCase;
+import { userService } from "@/infrastructure/httpclients/userService.js";
+import type { TokenPayload } from "@/domain/interfaces/ITokenPayload.js";
+import type { IUser } from "@/domain/interfaces/IUserServiceResponse.js";
+export class LoginUseCase {
+   
 
-    private constructor() { }
-
-    public static getInstance(): LoginUseCase {
-        if (!LoginUseCase.instance) {
-            LoginUseCase.instance = new LoginUseCase();
-        }
-        return LoginUseCase.instance;
-    }
-
-    public async execute(credentials:LoginCommand): Promise<LoginResponseDTO> {
+    public async execute(credentials: LoginCommand): Promise<LoginResponseDTO> {
 
         try {
+            const user: IUser = await userService.getUser(credentials.emailOrUserName);
+            if (!user) {
+                throw new AuthFailureError("USER_NOT_FOUND");
+            }
+            const isPasswordValid = await Password.compare(credentials.password, user.passwordHash as string);
+            if (!isPasswordValid) {
+                throw new AuthFailureError("INVALID_PASSWORD");
+            }
+            const playLoad: TokenPayload = {
+                userId: user.id,
+                email: user.email,
+                role: user.email,
+                emailVerified: !!user.avatarUrl,
+                isOAuth: user.isOAuth,
+                avatarUrl: user.avatarUrl,
+
+            }
+            const accessToken = tokenService.generateTokens(playLoad);
+            return accessToken;
 
         } catch (error) {
-
+            throw error
         }
 
     }
 
 }
-export const loginUseCase=LoginUseCase.getInstance()

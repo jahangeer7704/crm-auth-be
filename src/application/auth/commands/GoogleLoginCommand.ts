@@ -1,19 +1,18 @@
 import { LoginRequestSchema } from "@/application/auth/dtos/LoginRequestDTO.js"
-import { appLogger } from "@/shared/observability/logger/appLogger.js";
 import { ValidationError } from "@/shared/utils/errors/ApiError.js"
 
 export class LoginCommand {
     constructor(
-        public readonly emailOrUserName: string,
+        public readonly email: string,
         public readonly password: string,
+        public readonly userName: string,
     ) {
 
         this.validator()
     }
     private validator() {
-        const validate = LoginRequestSchema.safeParse({ emailOrUserName:this.emailOrUserName, password: this.password });
+        const validate = LoginRequestSchema.safeParse({ email: this.email, userName: this.userName, password: this.password });
         if (!validate.success) {
-            appLogger.error("LoginCommand", `Validation error: ${validate.error.message}`);
             throw new ValidationError(validate.error.message)
         }
 

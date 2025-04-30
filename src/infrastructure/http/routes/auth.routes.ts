@@ -1,18 +1,18 @@
 import { Router } from "express"
-import { authController } from "../controllers/auth.controller.js"
+import { AuthController } from "../controllers/auth.controller.js"
 class AuthRouter {
     private static instance: AuthRouter
     private readonly router: Router
+    private readonly authController: AuthController = new AuthController()
     private constructor() {
         this.router = Router()
         this.initRoutes()
     }
     private initRoutes() {
-        this.router.get("/google/login",authController.googleLogin)
-        this.router.get("/google/callback",authController.googleCallback)
-        // this.router.post("/login",)
-
-    
+        this.router.get("/google/login", this.authController.googleLogin)
+        this.router.get("/google/callback", this.authController.googleCallback)
+        this.router.post("/login", this.authController.jwtLogin)
+        this.router.post("/signup", this.authController.jwtCreate)
     }
     public getRouter() {
         return this.router

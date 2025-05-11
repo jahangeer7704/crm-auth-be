@@ -31,9 +31,10 @@ export class GoogleAuthUseCase {
                     try {
                         let getUser: IUser;
                         try {
-                            getUser = await userService.getUser(user.email);
+                            getUser = await userService.getUserByEmail(user.email);
                         } catch (error) {
                             if (error instanceof NotFoundError) {
+                                appLogger.info('auth', `User not found, creating new user: ${user.email}`);
                                 try {
                                     getUser = await userService.createUser({
                                         userName: user.name,
@@ -53,6 +54,7 @@ export class GoogleAuthUseCase {
                                 return reject(new InternalServerError('USER_FETCH_FAILED'));
                             }
                         }
+                        console.log(getUser);
 
                         const tokens = await tokenService.generateTokens({
                             userId: getUser.id,
@@ -61,6 +63,7 @@ export class GoogleAuthUseCase {
                             role: getUser.role,
                             emailVerified: getUser.emailVerified,
                             avatarUrl: getUser.avatarUrl || "",
+                            userName: getUser.userName
                         });
 
 
@@ -73,6 +76,8 @@ export class GoogleAuthUseCase {
                             },
                         });
                     } catch (tokenError) {
+                        console.log("tokenError", tokenError);
+
                         appLogger.error('auth', `Error during token generation: ${tokenError}`);
                         reject(new Error('TOKEN_GENERATION_FAILED'));
                     }

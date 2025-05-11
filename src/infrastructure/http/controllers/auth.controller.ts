@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
 import passport from "passport";
 import { AsyncHandler } from "@/infrastructure/http/middlewares/asyncHandler.js";
-import { SuccessResponse } from "../responses/ApiResponse.js";
+import { CreatedResponse, NoContentResponse, SuccessResponse } from "../responses/ApiResponse.js";
 import { LoginCommand } from "@/application/auth/commands/LoginCommand.js";
 import type { LoginRequestDTO } from "@/application/auth/dtos/LoginRequestDTO.js";
 import { GoogleAuthUseCase } from "@/application/auth/useCases/GoogleAuth.usecase.js";
@@ -10,6 +10,7 @@ import type { CreateUserDTO } from "@/application/auth/dtos/CreateUserDTO.js";
 import { CreateUserCommand } from "@/application/auth/commands/CreateUserCommand.js";
 import { CreateUser } from "@/application/auth/useCases/SignUp.usecase.js";
 import { appLogger } from "@/shared/observability/logger/appLogger.js";
+import { appConfig } from "@/config/readers/appConfig.js";
 export class AuthController {
   private readonly googleAuthUseCase = new GoogleAuthUseCase();
   private readonly loginUseCase = new LoginUseCase();
@@ -25,23 +26,23 @@ export class AuthController {
   public googleCallback = AsyncHandler(async (req: Request, res: Response) => {
     try {
       const authResult = await this.googleAuthUseCase.execute(req);
+      
       res.cookie('uln', authResult.refreshToken, {
         httpOnly: true,
         secure: true,
         sameSite: 'strict',
         maxAge: 7 * 24 * 60 * 60 * 1000,
       });
-      res.header("Authorization", `Bearer ${authResult.accessToken}`);
-      return new SuccessResponse(
-        "Login successful").send(res)
+  
+      res.redirect(`${appConfig.app.allowedOrigin}/auth-callback?token=${authResult.accessToken}`);
     } catch (error) {
-      throw error
+      res.redirect(`${appConfig.auth.clientUrl}/login?error=google_auth_failed`);
     }
   });
-
+//TODO have to handle the authorization header 
   public jwtLogin = AsyncHandler(async (req: Request, res: Response) => {
     try {
-      const {emailOrUserName, password }: LoginRequestDTO = req.body;
+      const { emailOrUserName, password }: LoginRequestDTO = req.body;
       const command = new LoginCommand(emailOrUserName, password)
       const authResult = await this.loginUseCase.execute(command)
       res.cookie('uln', authResult.refreshToken, {
@@ -50,9 +51,12 @@ export class AuthController {
         sameSite: 'strict',
         maxAge: 7 * 24 * 60 * 60 * 1000,
       });
-      res.header("Authorization", `Bearer ${authResult.accessToken}`);
+      res.header("authorization", `Bearer ${authResult.accessToken}`);
+      res.header('Access-Control-Expose-Headers', 'authorization');
+
       return new SuccessResponse(
-        "Login successful").send(res)
+        "Login successful", authResult.accessToken
+      ).send(res)
     } catch (error) {
       appLogger.error("control", `Error while  user login: ${error}`)
       throw error
@@ -70,8 +74,8 @@ export class AuthController {
         maxAge: 7 * 24 * 60 * 60 * 1000,
       });
       res.header("Authorization", `Bearer ${authResult.accessToken}`);
-      return new SuccessResponse(
-        "Login successful").send(res)
+      return new CreatedResponse(
+        "User created",authResult.accessToken).send(res)
     } catch (error) {
       appLogger.error("control", `Error while creating in user: ${error}`)
 

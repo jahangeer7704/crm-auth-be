@@ -15,33 +15,30 @@ export class CreateUser {
         try {
             let user: IUser;
             try {
-                user = await userService.getUser(credentials.email);
-                if (user)
-                    throw new ConflictError("USER_MAIL_ALREADY_EXISTS");
-                user = await userService.getUser(credentials.userName);
-                if (user)
-                    throw new ConflictError("USER_NAME_ALREADY_EXISTS");
-            } catch (error) {
-                if (error instanceof NotFoundError) {
-                    try {
-                        const password = await Password.hash(credentials.password);
-                        user = await userService.createUser({
-                            email: credentials.email,
-                            isOAuth: false,
-                            passwordHash: password,
-                            userName: credentials.userName,
-                        });
+                await userService.checkUserExists({ email: credentials.email, userName: credentials.userName });
+                try {
+                    const password = await Password.hash(credentials.password);
+                    user = await userService.createUser({
+                        email: credentials.email,
+                        isOAuth: false,
+                        passwordHash: password,
+                        userName: credentials.userName,
+                    });
 
-                    } catch (createUserError) {
-                        appLogger.error("usecase", `Error while creating in user: ${error}`)
+                } catch (createUserError) {
+                    appLogger.error("usecase", `Error while creating in user: ${createUserError}`)
 
-                        throw createUserError
-                    }
-                    appLogger.info('auth', `New user created successfully: ${user.id}`);
-                } else {
-                    appLogger.error('auth', `Unexpected error while fetching user: ${error}`);
-                    throw error
+                    throw createUserError
                 }
+            } catch (error) {
+                if (error instanceof ConflictError) {
+                    appLogger.error("usecase", `User already exists: ${error}`)
+                    throw error
+
+                }
+                appLogger.error("usecase", `Internal server error while checking existance: ${error}`)
+
+                throw error
             }
 
 
@@ -52,6 +49,7 @@ export class CreateUser {
                 emailVerified: !!user.avatarUrl,
                 isOAuth: user.isOAuth,
                 avatarUrl: user.avatarUrl,
+                userName: user.userName,
 
             }
             const accessToken = tokenService.generateTokens(playLoad);

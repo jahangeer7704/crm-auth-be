@@ -1,5 +1,6 @@
 import { Router } from "express"
 import { AuthController } from "../controllers/auth.controller.js"
+import { authenticationMiddleware } from "../middlewares/auth.middleware.js"
 class AuthRouter {
     private static instance: AuthRouter
     private readonly router: Router
@@ -11,8 +12,9 @@ class AuthRouter {
     private initRoutes() {
         this.router.get("/google/login", this.authController.googleLogin)
         this.router.get("/google/callback", this.authController.googleCallback)
-        this.router.post("/login", this.authController.jwtLogin)
-        this.router.post("/signup", this.authController.jwtCreate)
+
+        this.router.post("/login", authenticationMiddleware.authenticate, this.authController.jwtLogin)
+        this.router.post("/signup", authenticationMiddleware.authenticate, this.authController.jwtCreate)
     }
     public getRouter() {
         return this.router
